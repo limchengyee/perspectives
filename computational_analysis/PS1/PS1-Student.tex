@@ -1,0 +1,116 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{array}
+\usepackage{threeparttable}
+\usepackage{geometry}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1.25in,rmargin=1.25in}
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{\footnotesize\textsl{Page \thepage\ of \pageref{LastPage}}}
+\renewcommand\headrulewidth{0pt}
+\renewcommand\footrulewidth{0pt}
+\usepackage[format=hang,font=normalsize,labelfont=bf]{caption}
+\usepackage{listings}
+\lstset{frame=single,
+  language=Python,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{harvard}
+\usepackage{setspace}
+\usepackage{float,color}
+\usepackage[pdftex]{graphicx}
+\usepackage[format=hang,font=normalsize,labelfont=bf]{caption}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=red,urlcolor=blue}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{derivation}{Derivation} % Number derivations on their own
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition} % Number propositions on their own
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+%\numberwithin{equation}{section}
+\bibliographystyle{aer}
+\newcommand\ve{\varepsilon}
+\newcommand\boldline{\arrayrulewidth{1pt}\hline}
+
+
+\begin{document}
+
+\begin{flushleft}
+  \textbf{\large{Problem Set \#1}} \\
+  MACS 30000, Dr. Evans \\
+  Cheng Yee Lim
+\end{flushleft}
+
+\vspace{5mm}
+
+\noindent\textbf{Problem 1}
+
+\textbf{Part (a).}\
+\begin{figure}[htb]\centering\captionsetup{width=4.0in}
+  \caption{\textbf{Screenshot of one simulated lifetime income path}}\label{Fig. 1a}
+  \fbox{\resizebox{4.0in}{3.0in}{\includegraphics{images/Fig_1a.png}}}
+\end{figure}\
+
+\clearpage
+\textbf{Part (b).}\
+\begin{figure}[htb]\centering\captionsetup{width=4.0in}
+  \caption{\textbf{Screenshot of histogram of 10,000 initial income simulations}}\label{Fig. 1b}
+  \fbox{\resizebox{4.0in}{3.0in}{\includegraphics{images/Fig_1b.png}}}
+\end{figure}\\\
+1.25\% of the class will earn more than \$100,000 in the first year out of the program.\\
+9.28\% of the class will earn less than \$70,000 in the first year out of the program.\\
+No, the histogram is not normally distributed, it has fatter ends and a higher mean than a normal distribution.\\
+
+\clearpage
+\textbf{Part (c).}\
+
+\begin{figure}[htb]\centering\captionsetup{width=4.0in}
+  \caption{\textbf{Screenshot of histogram of 10,000 smiulations of years taken to pay off loans}}\label{Fig. 1c}
+  \fbox{\resizebox{4.0in}{3.0in}{\includegraphics{images/Fig_1c.png}}}
+\end{figure}\
+
+17.95\% of the simulations are able to pay off the loan in 10 years.\\
+
+\clearpage
+\textbf{Part (d).}\
+
+\begin{figure}[htb]\centering\captionsetup{width=4.0in}
+  \caption{\textbf{Screenshot of histogram of 10,000 smiulations of years taken to pay off loans}}\label{Fig. 1d}
+  \fbox{\resizebox{4.0in}{3.0in}{\includegraphics{images/Fig_1d.png}}}
+\end{figure}\
+
+74.07\% of the simulations are able to pay off the loan in 10 years, after the Chicago MACSS program becomes very well-known and the skills of the students are in high demand.\\
+
+\end{document}
+
